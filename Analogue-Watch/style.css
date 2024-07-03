@@ -1,0 +1,129 @@
+:root {
+  padding: 0;
+  margin: 0;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+
+body {
+  color: white;
+  font-size: 16px;
+  margin-top: 2vh;
+  background-image: url('./static/bg-oliver.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  color: orangered;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(1, 2, 1, 0.7);
+}
+
+h1 {
+  color: ghostwhite;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: auto;
+  margin: 0 0 72px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #093C14;
+}
+
+span {
+  color: teal;
+}
+
+a {
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+}
+
+a::visited {
+  color: lightyellow;
+}
+
+.watch {
+  margin-top: 14vh;
+  display: flex;
+  justify-content: center;
+}
+
+.rim {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid teal;
+  background-color: #5A424200;
+  text-shadow: 2px 2px 4px rgba(1, 2, 1, 0.7);
+  box-shadow: 5px 5px 30px 5px black;
+}
+
+.hour,
+.minute,
+.second {
+  right: 50%;
+  border: none;
+  border-radius: 40%;
+  position: absolute;
+  background-color: white;
+  transform-origin: right;
+  box-shadow: 2px 2px 30px 1px black;
+}
+
+.hour {
+  z-index: 1;
+  width: 70px;
+  height: 4px;
+  background-color: orangered;
+}
+
+.minute {
+  z-index: 2;
+  width: 90px;
+  height: 2px;
+  background-color: teal;
+
+}
+
+.second {
+  z-index: 3;
+  width: 130px;
+  height: 1px;
+  background-color: whitesmoke;
+}
+
+.twelve,
+.three,
+.six,
+.nine {
+  font-size: 16px;
+  z-index: 5;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.twelve {
+  top: 0%;
+  right: 140px;
+}
+
+.three {
+  right: 0%;
+}
+
+.six {
+  top: 275px;
+  right: 140px;
+}
+
+.nine {
+  left: 5px;
+}
+
+.footer {
+  backdrop-filter: blur(1px);
+}
